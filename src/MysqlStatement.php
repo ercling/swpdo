@@ -51,7 +51,7 @@ class MysqlStatement
             return false;
         }
         $parameter = ltrim($parameter, ':');
-        $this->bindMap[$parameter] = &$variable;
+        $this->bindMap[$parameter] = $variable;
 
         return true;
     }
